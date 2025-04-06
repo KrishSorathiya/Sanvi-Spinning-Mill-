@@ -4,35 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        *
-        {
-            margin:0%;
-            padding: 0%;
-            box-sizing: border-box;
-        }
-        #n1
-        {
-            background-color: black;
-            font-weight: 900;   
-            padding:1.8% 2% 1.8% 2%;
-            width: 100%;
-            margin-top:0%;
-            opacity: 0.75;
-            position: fixed;
-            top:0%;
-        }
-        a 
-        {
-            text-decoration:none;
-            color: white;
-            padding-right: 2%;
-        }
         .box
         {
             margin: 100px auto;
             padding: 20px;
             max-width: 1200px;
+        }
+        /* .box {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            padding: 20px 25px 15px 55px;
+            margin: 30px auto;
+            max-width: 1200px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        } */
+        .s1 {
+            background-color: rgba(255, 255, 255, 1);
+            color: #333;
+            padding-left: 80px;
+            padding-top: 40px;
+            padding-bottom: 40px;
         }
         .boxin
         {
@@ -45,6 +38,13 @@
             box-shadow: 1px 3px 5px rgba(163, 163, 163, 0.5), 1px 3px 5px rgba(189, 188, 188, 0.4);
             /* border-bottom-style: solid; */
             letter-spacing: 0.5px;
+        }
+        .pal
+        {
+            margin-left:  2%;
+            margin-right: 2%;
+            text-align: center;
+
         }
         .i1 img
         {
@@ -67,22 +67,32 @@
             margin-bottom: 2%;
             display: block;
         }
+        .company-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
         .f1
         {
             display: flex;
             flex-direction: row;
             /* align-items: center; */
-            justify-content: space-between;
+            justify-content:space-between;
             margin-bottom: 0px;
         }
-        @media (max-width: 768px) {
-            .f1 {
-                flex-direction: column;
-                text-align: center;
-            }
-            .f1 img {
-                margin-bottom: 20px;
-            }
+        input{
+            width:500px;
+            height: 35px;
+            border-style: none;
+            box-shadow: 1px 3px 5px 3px rgba(163, 163, 163, 0.5), 1px 3px 5px 3px rgba(189, 188, 188, 0.4);
+        }
+        button{
+            width:500px;
+            height: 35px;
+            border-style: none;
+            box-shadow: 1px 3px 5px 3px rgba(163, 163, 163, 0.5), 1px 3px 5px 3px rgba(189, 188, 188, 0.4);
         }
     </style>
 </head>
@@ -90,17 +100,23 @@
     <header>
         <div id="n1">
             <nav>
-                <a  href="shanvi" style="font-size:xx-large; font-weight: bold; float: left;">SHANVI SPINNING</a>
-                <center style="padding-top: 0.7%;">
-                    <div>
-                        <a  href="index.html" style="padding-left: 1%;">HOME</a>
-                        <a  href="Gallery">GALLERY</a>
-                        <a  href="spinningProcess.html">SHOPPING PROCESS</a>
-                        <a  href="Product&Infrastucture.html">PRODUCT & INFRASTUCTURE</a>
-                        <a  href="More">MORE DETAILS</a>
-                        <a  href="Contact">CONTACT US</a>
-                    </div>  
-                </center>          
+                <a href="index.html" class="logo">SANVI SPINNING</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Gallery.html">GALLERY</a></li>
+                    <li><a href="spinningProcess.html">SPINNING PROCESS</a></li>
+                    <li><a href="Product&Infrastucture.html">PRODUCT & INFRASTRUCTURE</a></li>
+                    <li class="dropdown">
+                        <a href="#">MORE DETAILS ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="QualityAssurance.html">Quality Assurance</a></li>
+                            <li><a href="certificate.html">Certification</a></li>
+                            <li><a href="BoradOfDirector.html">Board Of Directors</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
             </nav>
         </div>
         </header>
@@ -142,7 +158,54 @@
                     </div>
                 </div>
             </div>
-       </section>
+        </section>
+        <!-- <section class="box" style=" margin: 100px 20px;">
+            <div class="f1 boxin">
+                <div id="googleMap">
+                    <iframe src="https://www.google.com/maps/embed" style="border:0; align-items: center; width:200%;height:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="boxin" style=" padding: 100px; padding-top: 40px; margin-top: 0px;">
+                    <center><p style="padding-bottom: 30px;">Send us a message</p></center>
+                    <form action="get">
+                        <label id="label">Name</label>
+                        <br><br>
+                        <input type="text"><br><br>
+                        <label id="label">Email</label>
+                        <br><br>
+                        <input type="text"><br><br>
+                        <label id="label">Message</label>
+                        <br><br>
+                        <textarea rows="5" cols="20" style="resize: none; border-style: none; width: 500px; box-shadow: 1px 3px 5px 3px rgba(163, 163, 163, 0.5), 1px 3px 5px 3px rgba(189, 188, 188, 0.4);">Enter a your address</textarea><br><br>
+                        <button id="label">Submit</button>
+                        </form>
+                </div>
+            </div>
+       </section> -->
+       <section class="contact-section">
+        <div class="contact-container">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/place/sanvi+spinning+mill+pvt.ltd/@22.5437,70.339948,17z/data=!4m6!3m5!1s0x39575e74c4f13b07:0x7f5fa7b73ed68468!8m2!3d22.5437!4d70.339948!16s%2Fg%2F11c2jx1hl2?hl=en&entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" class="google-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-form">
+                <h2>Send us a message</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required>Enter your message here</textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section> 
 </main>
 </body>
-</html>
+</html> 

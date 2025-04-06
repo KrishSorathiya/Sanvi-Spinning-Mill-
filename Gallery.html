@@ -4,8 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       img {
+            width: 333px;
+            margin: -0.20%;
+            transition: transform 0.3s ease;
+        }
+        
+        img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        
+        .filter-buttons {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .filter-buttons a {
+            display: inline-block;
+            width: 150px;
+            height: 45px;
+            padding: 12px;
+            margin: 0 5px;
+            color: black;
+            font-size: 14px;
+            font-weight: bold;
+            border: 2px solid red;
+            background-color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-buttons a:hover {
+            background-color: red;
+            color: white;
+        }
+        
+        /* Hide all images by default */
+        #INFRASTUCTURE:target ~ .gallery-section img:not([data-category="INFRASTUCTURE"]),
+        #MACHINE:target ~ .gallery-section img:not([data-category="MACHINE"]),
+        #PRODUCT:target ~ .gallery-section img:not([data-category="PRODUCT"]),
+        #LABEQUIPMENTS:target ~ .gallery-section img:not([data-category="LABEQUIPMENTS"]) {
+            display: none;
+        }
+    </style>
 </head>
 <body>
+    <div id="n1">
+        <nav>
+            <a href="index.html" class="logo">SANVI SPINNING</a>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li><a href="spinningProcess.html">SPINNING PROCESS</a></li>
+                <li><a href="Product&Infrastucture.html">PRODUCT & INFRASTRUCTURE</a></li>
+                <li class="dropdown">
+                    <a href="#">MORE DETAILS ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="QualityAssurance.html">Quality Assurance</a></li>
+                        <li><a href="certificate.html">Certification</a></li>
+                        <li><a href="BoradOfDirector.html">Board Of Directors</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="page-title" style="margin-top:100px; font-size: xx-large; font-weight: 900; text-align: center;">OUR GALLERY</div>
     
+    <div class="filter-buttons">
+        <a href="#ALL" class="filter-btn">ALL</a>
+        <a href="#INFRASTUCTURE" class="filter-btn">INFRASTRUCTURE</a>
+        <a href="#MACHINE" class="filter-btn">MACHINE</a>
+        <a href="#PRODUCT" class="filter-btn">PRODUCT</a>
+        <a href="#LABEQUIPMENTS" class="filter-btn">LAB EQUIPMENTS</a>
+    </div>
+    
+    <!-- Empty targets for filtering -->
+    <div id="ALL"></div>
+    <div id="INFRASTUCTURE"></div>
+    <div id="MACHINE"></div>
+    <div id="PRODUCT"></div>
+    <div id="LABEQUIPMENTS"></div>
+    
+    <!-- Single gallery section with all images -->
+    <div class="gallery-section">
+        <!-- Infrastructure Images -->
+        <img src="GAllery/1.jpg" alt="Infrastructure" data-category="INFRASTUCTURE">
+        <img src="GAllery/2.jpg" alt="Infrastructure" data-category="INFRASTUCTURE">
+        <img src="GAllery/3.jpg" alt="Infrastructure" data-category="INFRASTUCTURE">
+        <img src="GAllery/4.jpg" alt="Infrastructure" data-category="INFRASTUCTURE">
+        <img src="GAllery/5.jpg" alt="Infrastructure" data-category="INFRASTUCTURE">
+        <img src="GAllery/6.jpg" alt="Infrastructure" data-category="INFRASTUCTURE">
+        
+        <!-- Machine Images -->
+        <img src="GAllery/24.jpg" alt="Machine" data-category="MACHINE">
+        <img src="GAllery/25.jpg" alt="Machine" data-category="MACHINE">
+        <img src="GAllery/26.jpg" alt="Machine" data-category="MACHINE">
+        <img src="GAllery/27.jpg" alt="Machine" data-category="MACHINE">
+        <img src="GAllery/28.jpg" alt="Machine" data-category="MACHINE">
+        <img src="GAllery/29.jpg" alt="Machine" data-category="MACHINE">
+        <img src="GAllery/30.jpg" alt="Machine" data-category="MACHINE">
+        
+        <!-- Product Images -->
+        <img src="GAllery/8.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/9.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/10.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/11.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/12.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/13.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/14.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/15.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/16.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/17.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/18.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/19.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/23.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/31.jpg" alt="Product" data-category="PRODUCT">
+        
+        <!-- Lab Equipment Images -->
+        <img src="GAllery/20.jpg" alt="Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/21.jpg" alt="Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/22.jpg" alt="Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/32.jpg" alt="Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/33.jpg" alt="Lab Equipment" data-category="LABEQUIPMENTS">
+        
+        <!-- Other Images (will only show in ALL view) -->
+        <img src="GAllery/7.jpg" alt="Gallery Image" data-category="OTHER">
+        <img src="GAllery/34.jpg" alt="Gallery Image" data-category="OTHER">
+   </div>
 </body>
 </html>
