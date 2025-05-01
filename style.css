@@ -81,7 +81,7 @@ footer {
 }
 #n1 {
     background-color: rgba(0, 0, 0, 0.9);
-    width: 100%;
+    width: 100%; 
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -104,7 +104,7 @@ nav {
     text-decoration: none;
 }
 
-.nav-links {
+.nav-links { 
     display: flex;
     list-style: none;
 }
@@ -168,9 +168,11 @@ nav {
 }
 
 .contact-form h2 {
-    text-align: center;
+    text-align: center;  
     margin-bottom: 30px;
     color: #333;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form-group {
@@ -189,7 +191,7 @@ nav {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 4px;  
     font-size: 16px;
     transition: border-color 0.3s;
 }
@@ -212,7 +214,7 @@ nav {
     color: white;
     border: none;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: large;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -240,42 +242,40 @@ nav {
     background: #f0f0f0;
 } */
 
-.slider-container {
-    height: 657px;
-    width: auto;
+.company-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.s1 {
+    background-color: rgba(255, 255, 255, 1);
+    color: #333;
+    padding: 40px 0px;
+}
+.slideshow {
     position: relative;
     overflow: hidden;
 }
 
-.slider {
-    width: 400%;
-    height: 100%;
+ .slides {
     display: flex;
-    transition: transform 0.5s ease;
-    animation: slide 10s infinite;
+    width: 100%; /* 3 slides = 300% */
+    animation: slide 20s infinite; /* 4s per slide × 3 slides */
 }
 
 .slide {
-    width: 33.333%;
-    height: 100%;
+    width: 20%; /* 100% / 3 slides */
+    flex-shrink: 0;
 }
-
 .slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
 }
+/* .slides {
+width: 3300%; /* 33 images × 100% 
+.slide {
+width: 3.03%; /* 100% / 33 images 
+} */
 
-/* Navigation Dots */
-
-@keyframes slide {
-    0%, 19% { transform: translateX(0); }        /* Slide 1 */
-    25%, 44% { transform: translateX(-25%); }   /* Slide 2 */
-    50%, 69% { transform: translateX(-50%); }   /* Slide 3 */
-    75%, 94% { transform: translateX(-75%); }   /* Slide 4 */
-    100% { transform: translateX(0); }          /* Reset */
-}
-/* Pause animation on hover */
-.slider-container:hover .slider {
-    animation-play-state:running;
-}
