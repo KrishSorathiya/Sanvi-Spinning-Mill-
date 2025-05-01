@@ -6,13 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-       img {
+       div > img {
             width: 333px;
             margin: -0.20%;
             transition: transform 0.3s ease;
         }
         
-        img:hover {
+        div> img:hover {
             transform: scale(1.02);
             box-shadow: 0 0 10px rgba(0,0,0,0.3);
         }
@@ -24,7 +24,7 @@
         
         .filter-buttons a {
             display: inline-block;
-            width: 150px;
+            width: 180px;
             height: 45px;
             padding: 12px;
             margin: 0 5px;
@@ -46,7 +46,8 @@
         #INFRASTUCTURE:target ~ .gallery-section img:not([data-category="INFRASTUCTURE"]),
         #MACHINE:target ~ .gallery-section img:not([data-category="MACHINE"]),
         #PRODUCT:target ~ .gallery-section img:not([data-category="PRODUCT"]),
-        #LABEQUIPMENTS:target ~ .gallery-section img:not([data-category="LABEQUIPMENTS"]) {
+        #LABEQUIPMENTS:target ~ .gallery-section img:not([data-category="LABEQUIPMENTS"])
+            {
             display: none;
         }
     </style>
@@ -110,31 +111,112 @@
         <img src="GAllery/30.jpg" alt="Machine" data-category="MACHINE">
         
         <!-- Product Images -->
-        <img src="GAllery/8.jpg" alt="Product" data-category="PRODUCT">
-        <img src="GAllery/9.jpg" alt="Product" data-category="PRODUCT">
-        <img src="GAllery/10.jpg" alt="Product" data-category="PRODUCT">
-        <img src="GAllery/11.jpg" alt="Product" data-category="PRODUCT">
-        <img src="GAllery/12.jpg" alt="Product" data-category="PRODUCT">
-        <img src="GAllery/13.jpg" alt="Product" data-category="PRODUCT">
-        <img src="GAllery/14.jpg" alt="Product" data-category="PRODUCT">
-        <img src="GAllery/15.jpg" alt="Product" data-category="PRODUCT">
-        <img src="GAllery/16.jpg" alt="Product" data-category="PRODUCT">
-        <img src="GAllery/17.jpg" alt="Product" data-category="PRODUCT">
-        <img src="GAllery/18.jpg" alt="Product" data-category="PRODUCT">
-        <img src="GAllery/19.jpg" alt="Product" data-category="PRODUCT">
-        <img src="GAllery/23.jpg" alt="Product" data-category="PRODUCT">
-        <img src="GAllery/31.jpg" alt="Product" data-category="PRODUCT">
-        
+        <img src="GAllery/20.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/21.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/22.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/32.jpg" alt="Product" data-category="PRODUCT">
+        <img src="GAllery/33.jpg" alt="Product" data-category="PRODUCT">
+
         <!-- Lab Equipment Images -->
-        <img src="GAllery/20.jpg" alt="Lab Equipment" data-category="LABEQUIPMENTS">
-        <img src="GAllery/21.jpg" alt="Lab Equipment" data-category="LABEQUIPMENTS">
-        <img src="GAllery/22.jpg" alt="Lab Equipment" data-category="LABEQUIPMENTS">
-        <img src="GAllery/32.jpg" alt="Lab Equipment" data-category="LABEQUIPMENTS">
-        <img src="GAllery/33.jpg" alt="Lab Equipment" data-category="LABEQUIPMENTS">
-        
+        <img src="GAllery/8.jpg" alt=" Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/9.jpg" alt=" Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/10.jpg" alt=" Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/11.jpg" alt=" Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/12.jpg" alt=" Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/13.jpg" alt=" Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/14.jpg" alt=" Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/15.jpg" alt=" Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/16.jpg" alt=" Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/17.jpg" alt=" Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/18.jpg" alt=" Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/19.jpg" alt=" Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/23.jpg" alt=" Lab Equipment" data-category="LABEQUIPMENTS">
+        <img src="GAllery/31.jpg" alt=" Lab Equipment" data-category="LABEQUIPMENTS">
+
+
         <!-- Other Images (will only show in ALL view) -->
-        <img src="GAllery/7.jpg" alt="Gallery Image" data-category="OTHER">
-        <img src="GAllery/34.jpg" alt="Gallery Image" data-category="OTHER">
-   </div>
+        
+
+    </div>
+    <!-- <section class="s1" style="margin-top: 30px;">
+        <div class="slideshow">
+            <div class="slides">
+                <div class="slide"><img src="Gallery/1.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="Gallery/2.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="Gallery/3.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="Gallery/4.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="Gallery/5.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="Gallery/6.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="Gallery/11.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="Gallery/8.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="Gallery/9.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="Gallery/10.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="Gallery/11.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="Gallery/12.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="Gallery/13.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="Gallery/14.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="Gallery/15.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="Gallery/16.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="Gallery/17.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="Gallery/18.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="Gallery/19.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="Gallery/20.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="Gallery/21.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="Gallery/22.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="Gallery/23.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="Gallery/24.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="Gallery/25.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="Gallery/26.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="Gallery/27.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="Gallery/28.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="Gallery/29.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="Gallery/30.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="Gallery/31.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="Gallery/32.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="Gallery/33.jpg" alt="Image 3"></div>
+            </div>
+        </div>
+    </section> -->
+    <footer class="s1" style="height: 200%;margin-top: -2.2%;" >
+        <div class="company-container">
+            <!-- Navigation Links Section 1 -->
+            <div>
+                <ul style="margin-right: 50px; margin-top: 0px;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Navigation Links Section 2 -->
+            <div>
+                <ul style="margin-right: 50px; margin-top: 0px;">
+                    <li><a href="spinningProcess.html">Spinning Process</a></li>
+                    <li><a href="Product&Infrastucture.html">Product & Infrastructure</a></li>
+                    <li><a href="QualityAssurance.html">Quality Assurance</a></li>
+                </ul>    
+            </div>
+    
+            <!-- Social Media Section -->
+            <div>
+                <h3 style="margin-right:50px ;">Connect with us</h3>
+                        <a href="https://www.facebook.com/sanvispinningmillpvt.ltd/" target="_blank" aria-label="Facebook">
+                            <img src="GAllery/icons8-facebook-48.png" alt="">
+                        </a>
+                        <a href="/cdn-cgi/l/email-protection#53383625323f1320323d253a7d34213c2623" target="_blank" aria-label="Email">
+                            
+                        </a>
+                        <a href="https://www.linkedin.com/company/sanvi-spinning-mill-pvt-ltd/" target="_blank" aria-label="LinkedIn">
+                            <img src="GAllery/icons8-linkedin-48.png" alt="">
+                        </a>
+            </div>
+    
+            <!-- Logo Section -->
+            <section>
+                <img  src="GAllery/logo.jpg" width="320px" alt="Sanvi Spinning Mill Logo" />
+            </section>
+        </div>
+    </footer>
 </body>
 </html>
